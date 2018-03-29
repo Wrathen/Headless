@@ -1,0 +1,56 @@
+		this.H_FPButton = c.H_FPButton;
+		this.H_FPSelect = c["H_FPSelect"];
+		this.H_FPLabel = c["H_FPLabel"];
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+		this.H_FPButton.onclick = function() {
+			b.H_FP(!b.H_FPBoolean)
+		};
+		
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||		
+		
+		
+		if(!b.H_FPButton.value == true)
+				{
+					H_FPCount = b.H_FPSelect.selectedIndex + 2;
+				}
+				else
+				{
+					H_FPCount = null;
+				}
+				
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||				
+				
+				
+		for (a = 2; 256 > a;) 
+		{
+			c = window.document.createElement("option");
+			c.textContent = "" + a;
+			d = window.document.createElement("option");
+			d.textContent = "" + a++;
+			this.H_FPSelect.appendChild(d);
+			this.Gg.appendChild(c);
+		}
+        this.Gg.selectedIndex = 10;
+		this.H_FPSelect.selectedIndex = 253;
+        this.Vh(!1);
+		this.H_FP(false);
+        this.o()
+		
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||			
+		
+		
+		H_FP: function(H_FPBoolean) {
+			this.H_FPBoolean = H_FPBoolean;
+			this.H_FPButton.textContent = "Fake Players Enabled: " + (H_FPBoolean ? "Yes" : "No");
+			this.H_FPLabel.hidden = !this.H_FPLabel.hidden;
+			this.H_FPSelect.hidden = !this.H_FPSelect.hidden;
+		},
+		
+		
+		
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||					
+		
+		
+<button data-hook='H_FPButton'></button><div class='label-input'><label data-hook='H_FPLabel'>Fake Players:</label><select data-hook='H_FPSelect'></select></div>
