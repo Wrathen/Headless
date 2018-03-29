@@ -59,13 +59,14 @@
 		},
 		
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||	
+		a.Dd = k.L.length;     -> Gördüğünüz yerden sonraki satıra yapıştırın. ( Yaklaşık 4126. Satır Civarları )
 
-			if(H_FPCount != null)  ( Yaklaşık 4102. Satır Civarları )
+			if(H_FPCount != null)
 			{
 				a.Dd = H_FPCount;
 			}
 		
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||					
-		"data-hook='unlisted'></button>" bunu aratıp, bunun bittiği yere yapıştırın. ( Yaklaşık 7746. Satır Civarları )
+		data-hook='unlisted'></button> bunu aratıp, bunun bittiği yere yapıştırın. ( Yaklaşık 7746. Satır Civarları )
 		
 <button data-hook='H_FPButton'></button><div class='label-input'><label data-hook='H_FPLabel'>Fake Players:</label><select data-hook='H_FPSelect'></select></div>
